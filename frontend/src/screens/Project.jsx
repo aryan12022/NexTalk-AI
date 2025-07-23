@@ -207,7 +207,7 @@ const Project = () => {
                                 <div className='text-sm'>
                                     {msg.sender._id === 'ai' ?
                                         WriteAiMessage(msg.message)
-                                        : <p>{msg.message}</p>}
+                                        :<p>{msg.message}</p>}
                                 </div>
                             </div>
                         ))}
