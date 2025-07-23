@@ -424,4 +424,4 @@ const Project = () => {
     )
 }
 
-export default Projec
+export default Project
