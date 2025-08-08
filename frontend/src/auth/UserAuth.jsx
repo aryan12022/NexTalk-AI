@@ -13,23 +13,23 @@ const UserAuth = ({ children }) => {
 
 
     useEffect(() => {
-        // if (user) {
-        //     setLoading(false)
-        // }
+        if (user) {
+            setLoading(false)
+        }
 
         if (!token) {
             navigate('/login')
         }
 
-        // if (!user) {
-        //     navigate('/login')
-        // }
+        if (!user) {
+            navigate('/login')
+        }
 
-    }, [token, user])
+    }, [])
 
-    // if (loading) {
-    //     return <div>Loading...</div>
-    // }
+    if (loading) {
+        return <div>Loading...</div>
+    }
 
 
     return (
